@@ -1,18 +1,50 @@
 <prompt>
   <instructions>
-    You are a senior engineer summarizing a coding project hosted on github.
+    You are a senior engineer summarizing a coding project hosted on GitHub.
     Your task is to summarize a project using the data provided in the <repository> section and hold the output you generated in a   single markdown (.md) file.
       - Refer to <summary> for a general description of the project context and background, the objective(s), what knowledge is required to complete it, and the final result.
       - Refer to <tools> for the skill(s) and software(s) used to complete the project.
+      - Refer to <sections> for the outline of the xml file.
       - Do not hallucinate functions if they are not present in the repository.
   </instructions>
+
+  <sections>
+    - Background
+    - Objectives
+    - Tools
+    - Results
+    - Additional Notes
+  </sections>
 
   <repository>
     <url>https://github.com/timhuyngo/repo-name</url>
     <branch>main</branch>
     <files>
-      <file path="*"/>
+      <directory path="TODO" include="recursive"/>
+      <file path="file.txt"/>
     </files>
   </repository>
 
+  <summary>
+    <background>
+    
+    </background>
+    <objectives>
+
+    </objectives>
+    <knowledge>
+
+    </knowledge>
+    <results>
+
+    </results>
+  </summary>
+
+  <tools>
+
+  </tools>
+
+  <task>
+    Provide a concise, well-structured report following the section(s) in <sections>.
+  <\task>
 </prompt>
